@@ -12,7 +12,7 @@ import org.springframework.security.oauth2.provider.expression.OAuth2MethodSecur
 public class MethodSecurityConfig extends GlobalMethodSecurityConfiguration {
     @SuppressWarnings("unused")
 	@Autowired
-    private OAuth2SecurityConfiguration securityConfig;
+    private WebSecurityConfiguration securityConfig;
     
     @Override
     protected MethodSecurityExpressionHandler createExpressionHandler() {
